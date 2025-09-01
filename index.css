@@ -1,0 +1,103 @@
+#heading {
+    color: red;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.logo{
+    width: 120;
+    height: 120;
+}
+
+.nav-items{
+    padding: 0px 10px 0px 0px;
+    font-size: 20px;
+}
+.nav-items > ul {
+    display: flex;
+    padding-top: 2;
+}
+
+.nav-items > ul > li{
+    margin: 5px;
+    list-style-type: none;
+    padding: 0px 10px 0px 0px;
+}
+
+.nav-items > ul > li>img{
+    width: 20;
+    padding: 0px 5px 0px 0px;
+}
+
+.body {
+
+}
+
+.search {
+    padding:10px
+}
+.res-card{
+    width: 240px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(240, 239, 238);
+    margin: 5px;
+}
+
+.res-card h3{
+    color: rgb(5, 5, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 600; */
+    display: -webkit-box;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.res-card h4{
+    color: black;
+    overflow-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 400; */
+    margin: 0 0 10 0;
+}
+.res-card h5{
+    color: black;
+    overflow-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 21px;
+    margin: 0 0 10 0;
+}
+
+
+
+.res-container {
+    display:flex;
+    flex-wrap: wrap;    
+}
+
+.res-card:hover{
+    border:1px solid black;
+}
+
+.res-logo{
+    width: 100%;
+}
+.slaTime {
+        font-family: Arial, Helvetica, sans-serif;
+    margin: 0 5px 20 0;
+    padding: 0 5px 0 0;
+} 
+.cardInnerContainer{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+ 
+#starIcon{
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
