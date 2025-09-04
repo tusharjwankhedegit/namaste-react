@@ -101,3 +101,8 @@
     height: 20px;
     display: flex;
 }
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+}

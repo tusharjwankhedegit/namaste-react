@@ -1,7 +1,4 @@
-import React from "react";
-import ResCard from "./ResCard";
-
-const restaurants = [
+export const RESTAURANTS_MOCK_DATA = [
   {
     info: {
       id: "684240",
@@ -1634,17 +1631,3 @@ const restaurants = [
     },
   },
 ];
-
-function ResContainer() {
-  return (
-    <div className="res-container">
-      {
-        restaurants.map( (item, index) => (
-          <ResCard id = {item.info.id} resData = {item}/>
-        ))
-      }
-
-    </div>
-  );
-}
-export default ResContainer;

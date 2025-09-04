@@ -1,30 +1,32 @@
 import React from "react";
+import { CDN_URL } from "../utils/constants";
+import { STAR_ICON_URL } from "../utils/constants";
 
-const ResCard = (props) => {
-  const { id, resData } = props;
+const RestaurantCard = (props) => {
+  const { resData } = props;
   const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } =
     resData?.info;
+    // console.log(key)
   return (
     <div className="res-card">
       <img
         className="res-logo"
         alt="res-logo"
         src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+          CDN_URL +
           cloudinaryImageId
         }
       />
       <h3>{name}</h3>
       <div className="cardInnerContainer">
         <h4 className="slaTime">{avgRating}</h4>
-        <img id="starIcon"  src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-one-stars-rating-png-png-image_10262742.png"/>
+        <img id="starIcon"  src= {STAR_ICON_URL}/>
         <h4 className="slaTime">{sla.slaString}</h4>
       </div>
       <h5>{cuisines.join(", ")}</h5>
       <h5>{costForTwo}</h5>
-      <h5>{id}</h5>
     </div>
   );
 };
 
-export default ResCard;
+export default RestaurantCard;
